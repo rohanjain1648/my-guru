@@ -138,7 +138,8 @@ Generate a mental health assessment report in ${languageName} that:
 4. Highlights 1-4 specific strengths or positive aspects.
 5. Writes a supportive, personalized summary and encouragement.
 
-IMPORTANT: The entire output, including category names, focus areas, and descriptions, MUST be in ${languageName}. Do not include English unless the requested language is English.
+IMPORTANT: The entire output content (summaries, descriptions, recommendations) MUST be in ${languageName}.
+CRITICAL: The values for 'overallSentiment', 'priority', and 'icon' MUST remain in English as defined in the schema. DO NOT TRANSLATE THESE ENUM VALUES.
 
 Guidelines:
 - Be supportive and non-judgmental
@@ -147,7 +148,6 @@ Guidelines:
 - Provide practical, actionable recommendations appropriate for the user's cultural context
 - If the user disagreed with the analysis, acknowledge their perspective is valid
 - Use appropriate icons for focus areas: heart (relationships/emotions), brain (thoughts/cognition), sun (mood/outlook), users (social), activity (physical/energy), shield (coping/resilience)
-- Remember this is a self-assessment tool, not a clinical diagnosis
 - Write naturally in ${languageName}, using appropriate cultural expressions and idioms`,
     })
 

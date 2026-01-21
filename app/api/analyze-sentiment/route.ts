@@ -79,10 +79,12 @@ Question: ${question}
 Response: "${response}"
 
 Analyze the emotional sentiment of this response. Consider:
-- Overall emotional tone (positive, neutral, or negative)
+- Overall emotional tone (positive, neutral, or negative) - MUST BE IN ENGLISH
 - Confidence score (0-1) where 1 is very confident about the sentiment
 - Key emotional keywords or phrases (identify them in the original language)
 - A brief summary of the emotional state expressed (provide in ${languageName})
+
+CRITICAL: The value for 'sentiment' field MUST be 'positive', 'neutral', or 'negative'. Do not translate this value.
 
 Be compassionate and understanding in your analysis. Look for both explicit and implicit emotional cues. Consider cultural context when interpreting emotional expressions.`,
     })
